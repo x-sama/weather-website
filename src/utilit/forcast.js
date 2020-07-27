@@ -15,7 +15,8 @@ const forCast = (lin , lon ,  callback)=>{
             const data = {
                 temp : body.current.temperature,
                 feelslike: body.current.feelslike,
-                dis : body.current.weather_descriptions,
+                dis : body.current.weather_descriptions[0],
+                isDay : body.current.is_day,
 
             }
             callback(undefined , data)
