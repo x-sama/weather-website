@@ -20,7 +20,7 @@ form.addEventListener('submit' , (e) =>{
                 messageOne.innerHTML = '<span>location</span> : ' +  data.location;
                 messageOne.style.color  = 'green';
                 messageTwo.style.color  = 'green';
-                messageTwo.innerHTML = '<span>weather-status</span> : ' + data.des + ' <br> <br> ' + '<span>temperature</span> : ' +  data.temp+ ' <br> <br> ' + '<span>feelslike</span> : ' +  data.feelslike
+                messageTwo.innerHTML = '<span>weather-status</span> : ' + data.des + ' <br> <br> ' + '<span>temperature</span> : ' +  data.forCast+ ' <br> <br> ' + '<span>feelslike</span> : ' +  data.feelslike
                     + ' <br> <br> ' + '<span>is day</span> : ' +  data.isDay
 
             }
