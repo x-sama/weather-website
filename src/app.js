@@ -59,7 +59,8 @@ app.get('/weather' , (req , res) =>{
              res.send({
                 location : location,
                 forCast : data.temp,
-                des : data.dis
+                des : data.dis,
+                 feelslike:data.feelslike
             })
         })
     })
