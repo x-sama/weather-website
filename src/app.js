@@ -6,6 +6,8 @@ const chalk = require('chalk')
 const forCast = require('./utilit/forcast')
 const geoCode = require('./utilit/geoCode')
 
+// port variable for heroku and local server
+const port = process.env.PORT || 3000;
 
 // defind the dir paths
 const publicDir = path.join(__dirname , '../public')
@@ -81,6 +83,6 @@ app.get('/weather' , (req , res) =>{
     })
 })
 
-app.listen(3000 , () =>{
-    console.log('we listening to the server in port 3000')
+app.listen(port , () =>{
+    console.log('we listening to the server in port ' + port)
 })
